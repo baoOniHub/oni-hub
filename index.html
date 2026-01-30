@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>ONI HUB - Status</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: radial-gradient(circle at top, #2a0033, #000);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .container {
+            background: rgba(0,0,0,0.65);
+            border-radius: 18px;
+            padding: 35px;
+            width: 360px;
+            text-align: center;
+            box-shadow: 0 0 25px #a855f7;
+        }
+
+        h1 {
+            color: #d946ef;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+        }
+
+        .status {
+            margin: 15px 0;
+            font-size: 18px;
+        }
+
+        .online { color: #22c55e; }
+        .updating { color: #f59e0b; }
+        .maintenance { color: #ef4444; }
+
+        .btn {
+            display: block;
+            margin: 12px 0;
+            padding: 12px;
+            border-radius: 10px;
+            background: #d946ef;
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        .btn:hover {
+            background: #a855f7;
+        }
+
+        .note {
+            margin-top: 10px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>ONI HUB</h1>
+
+    <div class="status">
+        Trạng thái: <span class="online">ONLINE</span>
+        <!-- đổi class + chữ nếu update -->
+    </div>
+
+    <p>Version hiện tại: <b>v1.0.0</b></p>
+    <p>Update: Fix bug + tối ưu</p>
+
+    <a class="btn" href="https://link-lay-key-cua-ong" target="_blank">
+        🔑 LẤY KEY MỚI
+    </a>
+
+    <a class="btn" href="https://discord.gg/linkdiscord" target="_blank">
+        💬 DISCORD ONI HUB
+    </a>
+
+    <div class="note">
+        Nếu hub đang update, vui lòng quay lại sau
+    </div>
+
+    <div class="footer">
+        © 2026 ONI HUB
+    </div>
+</div>
+
+</body>
+</html>
