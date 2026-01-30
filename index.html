@@ -1,91 +1,100 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <title>ONI HUB</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: radial-gradient(circle at top, #2b0000, #000);
-      color: #fff;
-      min-height: 100vh;
-    }
-    header {
-      display: flex;
-      align-items: center;
-      padding: 12px 20px;
-      background: #2a2a3a;
-      box-shadow: 0 2px 10px rgba(0,0,0,.5);
-    }
-    header img {
-      width: 28px;
-      height: 28px;
-      margin-right: 10px;
-    }
-    header h1 {
-      font-size: 18px;
-      font-weight: bold;
-      letter-spacing: 1px;
-    }
-    .hero {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 40px 20px;
-    }
-    .hero img {
-      max-width: 100%;
-      width: 420px;
-      border-radius: 12px;
-      box-shadow: 0 0 40px rgba(255,80,0,.6);
-    }
-    .content {
-      text-align: center;
-      padding: 20px;
-    }
-    .content h2 {
-      font-size: 28px;
-      margin-bottom: 10px;
-      color: #ff4d00;
-    }
-    .content p {
-      opacity: .85;
-      max-width: 600px;
-      margin: auto;
-      line-height: 1.6;
-    }
-    footer {
-      text-align: center;
-      padding: 15px;
-      opacity: .6;
-      font-size: 13px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>ONI HUB</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: radial-gradient(circle at top, #2b0000, #000);
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .logo {
+            max-width: 300px;
+            width: 80%;
+            margin-bottom: 20px;
+            filter: drop-shadow(0 0 20px red);
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #ff2a2a;
+            margin: 10px 0;
+            text-shadow: 0 0 15px red;
+        }
+
+        p {
+            max-width: 600px;
+            font-size: 16px;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff0000, #8b0000);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            box-shadow: 0 0 25px rgba(255,0,0,0.6);
+            transition: all 0.2s ease;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 40px rgba(255,0,0,0.9);
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 13px;
+            opacity: 0.6;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
 
-  <header>
-    <img src="oni-icon.png" alt="Oni" />
-    <h1>ONI HUB</h1>
-  </header>
+        <!-- Logo ONI -->
+        <img src="favicon.png" alt="ONI HUB" class="logo">
 
-  <section class="hero">
-    <img src="oni-hub.png" alt="ONI HUB" />
-  </section>
+        <h1>ONI HUB</h1>
 
-  <section class="content">
-    <h2>Welcome to ONI HUB</h2>
-    <p>
-      Nơi tổng hợp script, tool và dự án của ONI.
-      Giao diện tối – ngầu – đơn giản, đúng chất quỷ Oni 🔥
-    </p>
-  </section>
+        <p>
+            Blox Fruits Script Hub<br>
+            Auto Farm • Boss • Raid • PvP<br>
+            Free & VIP Version
+        </p>
 
-  <footer>
-    © 2026 ONI HUB. All rights reserved.
-  </footer>
+        <!-- Get Script -->
+        <a href="verify.html" class="btn">🔥 GET SCRIPT 🔥</a>
 
+        <div class="footer">
+            © 2026 ONI HUB • All rights reserved
+        </div>
+
+    </div>
 </body>
 </html>
